@@ -1,3 +1,5 @@
+/*jshint esversion: 6 */
+
 var expect = require('expect');
 
 var {generateMessage, generateLocationMessage} = require('./message.js');

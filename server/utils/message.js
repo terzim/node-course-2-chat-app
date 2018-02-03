@@ -1,3 +1,5 @@
+/*jshint esversion: 6 */
+
 var generateMessage = (from, text) => {
 	return {
 		from,
