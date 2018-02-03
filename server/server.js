@@ -34,10 +34,10 @@ io.on('connection', (socket) => {
 	// 	createdAt: 123123
 	// });
 
-	socket.on('createMessage', (message) => {
+	socket.on('createMessage', (message, callback) => {
 		console.log('createMessage', message);
 		io.emit('newMessage', generateMessage(message.from, message.text));
-		
+		callback('This is from the server');
 		// socket.broadcast.emit('newMessage', {
 		// 	from: message.from,
 		// 	text: message.text,
